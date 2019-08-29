@@ -1,0 +1,86 @@
+.main-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  .breed-submenu-container {
+    width: 100%;
+
+    .single-breed-viewer-place {
+      margin-bottom: 5%;
+      margin-top: 2%;
+      height: 800px;
+      background: darkgray;
+
+      .breed-info-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        .sub-image-container {
+          height: 100%;
+          max-height: 600px;
+          max-width: 900px;
+
+          .image-slider-container {
+            img {
+              margin: 0 auto;
+              height: 600px;
+              max-width: 900px;
+            }
+          }
+
+          .slick-slide {
+            width: 900px;
+          }
+        }
+
+        .breed-preview-container {
+          display: flex;
+          align-items: center;
+
+          .breed-preview-name {
+            margin: 10px;
+            font-size: 20px;
+          }
+
+          .breed-preview-flag {
+            max-width: 35px;
+            max-height: 25px;
+          }
+        }
+
+        .breed-preview-description {
+          text-align: center;
+          max-width: 900px;
+        }
+      }
+    }
+  }
+
+  .grid-container {
+    max-width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+    .element-container {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+
+      .breed-preview-image {
+        height: 400px;
+        width: 400px;
+      }
+
+      .breed-preview-name {
+        margin: 10px;
+        font-size: 16px;
+      }
+    }
+  }
+}
